@@ -1,0 +1,25 @@
+name: Create Release on Version Bump
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check version and create release
+        uses: Makepad-fr/auto-release-on-version-bump-action@v1.0.0
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          name: "v$newVersion"
+          draft: "false"
+          pre-release: auto
+          generate-release-note: "true"
+          tag-name: "v$newVersion"
