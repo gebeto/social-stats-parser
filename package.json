@@ -1,19 +1,31 @@
 {
   "name": "social-stats-parser",
   "version": "1.0.7",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/umd/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/umd/index.js"
+    }
+  },
   "repository": "https://github.com/gebeto/social-stats-parser",
   "author": "gebeto <slavik.nychkalo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.umd.json",
     "test": "exit 0"
   },
   "devDependencies": {
     "@types/node": "^24.7.2",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
   },
   "dependencies": {
     "node-html-parser": "^7.0.1"
