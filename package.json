@@ -16,7 +16,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "node-html-parser": "^7.0.1",
-    "social-stats-parser": "^1.0.2"
+    "node-html-parser": "^7.0.1"
   }
 }
