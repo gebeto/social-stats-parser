@@ -1,7 +1,8 @@
 {
   "name": "social-stats-parser",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/gebeto/social-stats-parser",
   "author": "gebeto <slavik.nychkalo@gmail.com>",
   "license": "MIT",

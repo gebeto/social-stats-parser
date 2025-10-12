@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "noEmit": true,
-    "moduleResolution": "node",
     "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
     "types": [],
     "sourceMap": true,
     "declaration": true,
