@@ -1,0 +1,19 @@
+{
+  "name": "social-stats-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gebeto/social-stats-parser",
+  "author": "gebeto <slavik.nychkalo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.1"
+  }
+}
