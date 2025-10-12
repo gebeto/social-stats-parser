@@ -2,7 +2,16 @@
 Social Stats Parser
 
 
+## Available parsers
+
+ - `InstagramParser`
+ - `TikTokParser`
+ - `YouTubeParser`
+
+
 ## How to use
+
+Parse Instagram stats
 
 ```js
 import { InstagramParser } from "social-stats-parser";
