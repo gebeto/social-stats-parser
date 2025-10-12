@@ -23,7 +23,7 @@ instagramParser.parse("slavik.nychkalo").then((res) => console.log(res));
 
 The result will be:
 
-```json
+```js
 {
   username: 'slavik.nychkalo',
   followers: '8805',
