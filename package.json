@@ -8,7 +8,10 @@
   "exports": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "repository": "https://github.com/gebeto/social-stats-parser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gebeto/social-stats-parser"
+  },
   "homepage": "https://github.com/gebeto/social-stats-parser",
   "author": {
     "email": "slavik.nychkalo@gmail.com",
