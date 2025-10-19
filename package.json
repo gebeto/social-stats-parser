@@ -1,19 +1,12 @@
 {
   "name": "social-stats-parser",
   "version": "1.0.9",
-  "type": "module",
-  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./dist/umd/index.js",
-  "module": "./dist/esm/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/umd/index.js"
-    }
-  },
+  "exports": "./dist/social-stats-parser.es.js",
+  "module": "./dist/social-stats-parser.umd.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://github.com/gebeto/social-stats-parser",
   "homepage": "https://github.com/gebeto/social-stats-parser",
   "author": {
@@ -23,16 +16,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig.umd.json",
+    "build": "vite build",
     "test": "exit 0"
   },
   "devDependencies": {
     "@types/node": "^24.7.2",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
-    "vite": "^7.1.9"
+    "vite": "^7.1.10"
   },
   "dependencies": {
-    "node-html-parser": "^7.0.1"
+    "node-html-parser": "^7.0.1",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
