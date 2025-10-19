@@ -15,7 +15,11 @@
     }
   },
   "repository": "https://github.com/gebeto/social-stats-parser",
-  "author": "gebeto <slavik.nychkalo@gmail.com>",
+  "author": {
+    "email": "slavik.nychkalo@gmail.com",
+    "name": "Yaroslav Nychkalo",
+    "url": "https://github.com/gebeto"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig.umd.json",
