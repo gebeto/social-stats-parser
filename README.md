@@ -1,6 +1,8 @@
 # social-stats-parser
 Social Stats Parser
 
+[![Node.js Package](https://github.com/gebeto/social-stats-parser/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/gebeto/social-stats-parser/actions/workflows/npm-publish.yml)
+![NPM Version](https://img.shields.io/npm/v/social-stats-parser)
 
 ## Available parsers
 
